@@ -1,0 +1,43 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBot</title>
+  <script src="https://kit.fontawesome.com/8990a4aeb8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="../static/chatbot.css" rel="stylesheet">
+  <link rel="icon" href="../static/imgs/LogoRadar.png" id="aba">
+</head>
+<body>
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <p> Radar</p>
+        <br>
+        <img src="../static/imgs/LogoRadar.png" alt="" srcset="" id="LogoRadar">
+        <br>
+        <p> Wave</p>
+      </div>
+    </header>
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img" style="background-image: url(../static/imgs/bot.weChatbot1.webp);" loading="lazy"></div>
+          <div class="msg-bubble">
+            <div class="msg-info">
+            <div class="msg-info-name">SONAR</div>
+            <div class="msg-info time"></div>
+          </div>
+          <div class="msg-text">
+            Olá, seja bem vindo ao ChatBot! Vamos lá mande me uma menssagem.
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="msger-inputarea" action ="/home" method="POST">
+      <input type="text" name="msger-input" id="message-input" class="msger-input" placeholder="Faça uma pergunta...">
+      <button type="submit" class="msger-send-btn" ><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </section>
+  <script src="../static/main.js"></script>
+</body>
+</html>
